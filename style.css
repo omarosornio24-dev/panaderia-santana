@@ -1,0 +1,211 @@
+/* Variables de estilo */
+:root {
+    --primary-green: #2d5a43;
+    --mint-green: #68a384;
+    --light-mint: #e2f0d9;
+    --dark-bg: #1c1c1c;
+    --text-color: #333333;
+    --light-text: #ffffff;
+    --accent-gold: #e5b352;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-bg);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-circle {
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--primary-green);
+    text-align: center;
+}
+
+.croissant-icon {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.logo-title {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--dark-bg);
+    line-height: 1;
+}
+
+.logo-subtitle {
+    font-size: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--dark-bg);
+}
+
+.logo-year {
+    font-size: 0.45rem;
+    color: #666;
+}
+
+.brand-name {
+    color: var(--light-text);
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--light-text);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--mint-green);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('2348.jpg') center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--light-text);
+}
+
+.hero-overlay h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero-overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.btn-primary {
+    background-color: var(--mint-green);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-green);
+}
+
+/* Secciones generales */
+.about-section, .products-section {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-section h2, .products-section h2 {
+    color: var(--primary-green);
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.image-card {
+    margin-top: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.image-card img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Grilla de productos */
+.grid-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    border-top: 4px solid var(--mint-green);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: var(--primary-green);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+    color: var(--mint-green);
+}
